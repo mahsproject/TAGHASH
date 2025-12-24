@@ -33,11 +33,11 @@ body {
     z-index: 1000;
 }
 
+/* Logo - SVG Handling */
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #000;
-    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    /* No font settings needed as it's an SVG now */
 }
 
 /* Hero Section (Simple & Casual) */

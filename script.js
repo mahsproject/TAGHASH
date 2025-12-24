@@ -41,7 +41,7 @@ function downloadPDF() {
     doc.setTextColor(0, 0, 0); // Black
     
     let y = 35; 
-    const lineHeight = 6; 
+    const lineHeight = 6; // Reduced slightly to fit more content
     const pageHeight = doc.internal.pageSize.height;
     const margin = 20;
     
