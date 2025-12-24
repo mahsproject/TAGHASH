@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagHash - Fund Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">#taghash</div>
+        <div class="nav-actions">
+            <button class="btn-primary" onclick="scrollToContact()">Book a Consultation</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content centered">
+            <h1>Comprehensive fund setup, compliance, reporting, and accounting services designed for institutional investors and investment managers.</h1>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>LIST OF SERVICES WE OFFER</h2>
+            <button class="btn-outline" onclick="downloadPDF()"><i class="fas fa-file-pdf"></i> Download PDF</button>
+        </div>
+
+        <div class="split-layout">
+            <div class="services-nav">
+                <button class="nav-item active" onclick="switchTab(event, 'fund-setup')">
+                    <i class="fas fa-landmark"></i> Fund Setup
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'one-time')">
+                    <i class="fas fa-file-signature"></i> One-Time Registration
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'onboarding')">
+                    <i class="fas fa-users"></i> Investor Onboarding
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'compliance')">
+                    <i class="fas fa-clipboard-check"></i> Compliance & Reporting
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'capital')">
+                    <i class="fas fa-money-bill-wave"></i> Capital Calls
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'investor-req')">
+                    <i class="fas fa-headset"></i> Investor Requests
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'bookkeeping')">
+                    <i class="fas fa-book"></i> Book-Keeping & MIS
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'accounting')">
+                    <i class="fas fa-calculator"></i> Fund Accounting
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'valuation')">
+                    <i class="fas fa-chart-line"></i> Investment & Valuation
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'fund-comp')">
+                    <i class="fas fa-gavel"></i> Fund Compliances
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'reporting')">
+                    <i class="fas fa-file-invoice"></i> Fund Reporting
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'trustee')">
+                    <i class="fas fa-handshake"></i> Trustee Interfacing
+                </button>
+                <button class="nav-item" onclick="switchTab(event, 'other')">
+                    <i class="fas fa-ellipsis-h"></i> Other Matters
+                </button>
+            </div>
+
+            <div class="services-content-area">
+                
+                <div id="fund-setup" class="content-panel active">
+                    <div class="panel-header">
+                        <i class="fas fa-landmark"></i>
+                        <h3>FUND SETUP</h3>
+                    </div>
+                    <ul>
+                        <li>Structuring and IM entity setup</li>
+                        <li>Drafting and Finalizing PPM</li>
+                        <li>Co-ordinating in appointment of Trustee</li>
+                        <li>Trust Deed</li>
+                        <li>Investment Management Agreement</li>
+                        <li>Register with SEBI: Application to SEBI with all required details</li>
+                    </ul>
+                </div>
+
+                <div id="one-time" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>ONE-TIME REGISTRATION</h3>
+                    </div>
+                    <ul>
+                        <li>Review of PPM and contribution agreement from an operational perspective and highlight issues if any </li>
+                        <li>KRA Registration</li>
+                        <li>CKYC Registration</li>
+                        <li>LEI Registration</li>
+                        <li>GIIN registration</li>
+                        <li>PAN for fund and scheme</li>
+                        <li>TAN for scheme</li>
+                        <li>Appointment of RTA</li>
+                        <li>Appointment of Custodian</li>
+                        <li>FIU registration</li>
+                        <li>GST registration if required</li>
+                        <li>RBI entity master registration for filing Form INVI</li>
+                        <li>SEBI scores registration</li>
+                        <li>Setting up the Fund as an issuer with NSDL and CDSL</li>
+                    </ul>
+                </div>
+
+                <div id="onboarding" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-users"></i>
+                        <h3>INVESTOR ONBOARDING</h3>
+                    </div>
+                    <ul>
+                        <li>Co-ordinating the execution of subscription documents</li>
+                        <li>Dispatch of signed agreements</li>
+                        <li>Investor KYC procedures</li>
+                        <li>Updating and maintaining investor database</li>
+                    </ul>
+                </div>
+
+                <div id="compliance" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>INVESTOR COMPLIANCE & REPORTING</h3>
+                    </div>
+                    <ul>
+                        <li>Uploading KYC documents in KRA and C-KYC System</li>
+                        <li>FATCA/CRS compliances</li>
+                        <li>Co-ordinating the issue of K1s to overseas investors and PFIC analysis with any consultant that we are required to work with</li>
+                        <li>Issuance of Forms 64C and 16A</li>
+                        <li>Quarterly reporting (capital account statement and financials of the fund)</li>
+                        <li>Investor transparency reports along with annual audited financial statements</li>
+                        <li>Inputs for advance tax</li>
+                    </ul>
+                </div>
+
+                <div id="capital" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>CAPITAL CALLS & DISTRIBUTION</h3>
+                    </div>
+                    <ul>
+                        <li>Issuance of call letters/drawdown notices</li>
+                        <li>Tracking wire transfers and co-ordinating with Trustees</li>
+                        <li>Co-ordinating with banks for inward foreign remittances</li>
+                        <li>Follow ups for fund realization</li>
+                        <li>Computation of distribution as per prescribed methodology</li>
+                        <li>Handling payouts in close co-ordination with investment manager</li>
+                        <li>Issuance of distribution letter/notices</li>
+                    </ul>
+                </div>
+
+                <div id="investor-req" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-headset"></i>
+                        <h3>INVESTOR-SPECIFIC REQUESTS</h3>
+                    </div>
+                    <ul>
+                        <li>Compliance with side letters</li>
+                        <li>Unit statements or investment related confirmation as required</li>
+                        <li>Processing the transfer or transmission of units</li>
+                        <li>Processing of Institutional Investor Queries and updation of data on their respective online portal.</li>
+                    </ul>
+                </div>
+
+                <div id="bookkeeping" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-book"></i>
+                        <h3>BOOK-KEEPING, MIS & CASHFLOW</h3>
+                    </div>
+                    <ul>
+                        <li>Maintaining general ledgers for income & expense items</li>
+                        <li>Documentation and assistance during fund audits</li>
+                        <li>Maintain and record portfolio investment activity</li>
+                        <li>Assistance during scrutiny conducted by any authority</li>
+                        <li>Monthly MIS on fund performance in agreed format</li>
+                        <li>Planning capital calls</li>
+                        <li>Treasury management</li>
+                        <li>Weekly/monthly fund position reports</li>
+                    </ul>
+                </div>
+
+                <div id="accounting" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-calculator"></i>
+                        <h3>FUND ACCOUNTING</h3>
+                    </div>
+                    <ul>
+                        <li>Setting up the chart of accounts and maintenance of Investor MIS</li>
+                        <li>Drawdown, Investment, Income and Expenses accounting and MIS</li>
+                        <li>Computation of tax and other levies and generation of related reports</li>
+                        <li>Prepare Investment, Divestment calculations as per distribution waterfall</li>
+                        <li>Calculation of Management Fees, Operating and other expenses as per PPM</li>
+                        <li>Accounts payable activities</li>
+                        <li>Preparation of financial statements for the purposes of audit and management</li>
+                        <li>Preparation of NAV statement basis valuation</li>
+                        <li>Provide information required to the valuation team</li>
+                        <li>Provide Audit support services from time to time for financial statement audit</li>
+                    </ul>
+                </div>
+
+                <div id="valuation" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>INVESTMENT & VALUATION</h3>
+                    </div>
+                    <ul>
+                        <li>Creating requisite documents and maintaining a database of portfolio companies</li>
+                        <li>Recording essential documentation and signing off the investment check list before wiring</li>
+                        <li>Co-ordinating the valuation of portfolio investments only to the extent which data is available with us. Qualitative inputs have to be handled by the client</li>
+                        <li>Quarterly collection of KPIs from portfolio companies.</li>
+                    </ul>
+                </div>
+
+                <div id="fund-comp" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-gavel"></i>
+                        <h3>FUND COMPLIANCES</h3>
+                    </div>
+                    <ul>
+                        <li>Prepare and file SEBI Quarterly report</li>
+                        <li>Prepare and Submit CTR to the trustee</li>
+                        <li>Prepare and submit Benchmarking information to various agencies</li>
+                        <li>Reporting of foreign investment made in SEBI portal as and when wiring takes place</li>
+                        <li>Maintaining SEBI complaints register</li>
+                        <li>Assisting the Investment Manager with adhoc/ one time requirements of SEBI as per SEBI guidelines and circular</li>
+                        <li>Coordination and providing required information for PPM audit</li>
+                        <li>Payment of Stamp duty and submitting return of information required by the RTA including submission of corporate action for dematerialization of units/credit of units to investor Demat account</li>
+                        <li>Assist in Annual PPM filing with SEBI and submission to SEBI (PPM has to shared by lawyers, we will assist in investor consent and circulating with investors) </li>
+                        <li>Preparation and circulation of investor charter if not part of PPM</li>
+                        <li>Renewal of LEI number on an annual basis</li>
+                        <li>Assistance in filing income tax returns for the fund</li>
+                        <li>Monthly and quarterly and TDS compliance</li>
+                        <li>Filing of Form 64D with the income tax authorities</li>
+                        <li>Filing of form Invi whenever required</li>
+                        <li>Filing of annual return of foreign assets and liabilities if required</li>
+                        <li>Filing of Form DI (if the client is an FOCC entity)</li>
+                        <li>Following up with the AD banker on ODI acknowledgement for overseas investment reporting </li>
+                        <li>Obtaining declaration from portfolio companies on status of statutory compliance (if mandated by the client)</li>
+                        <li>Computation of capital gain/loss on investments</li>
+                        <li>PPM Audit</li>
+                        <li>SEBI Compliance: Recent Compliance  Guidelines  for Digital  Accessibility  CircularRights  of Persons   with   Disabilities   Act,   2016   and   rules   made   thereunder-mandatory  compliance  by  all  Regulated Entities’ dated July 31, 2025 (Circular No. SEBI/HO/ITD-1/ITD_VIAP/P/CIR/2025/111)</li>
+                    </ul>
+                </div>
+
+                <div id="reporting" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>FUND REPORTING</h3>
+                    </div>
+                    <ul>
+                        <li>Preparation of Monthly/ Quarterly/Annual financial reports</li>
+                        <li>Trustee Compliance report</li>
+                    </ul>
+                </div>
+
+                <div id="trustee" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-handshake"></i>
+                        <h3>TRUSTEE INTERFACING</h3>
+                    </div>
+                    <ul>
+                        <li>Co-ordinating with the Trustee for all operations like fund transfers, treasury management, etc.</li>
+                        <li>Preparation of the associated documents for the above operations</li>
+                    </ul>
+                </div>
+
+                <div id="other" class="content-panel">
+                    <div class="panel-header">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <h3>OTHER MATTERS</h3>
+                    </div>
+                    <ul>
+                        <li>Certification/attest function (CA certificates, 15CB, 64D etc)</li>
+                        <li>Responding to notices/ representation before statutory authorities (please note that in case there is an enquiry etc we will provide details required) however preparation of response and representation will be excluded from the scope above</li>
+                        <li>SEBI approval for ODI investments</li>
+                        <li>Investor Accreditation</li>
+                        <li>Digital Disability Assessment</li>
+                        <li>Cybersecurity Compliance (with CSCRF)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="contact-header">Get in Touch</h2>
+        <p class="contact-subheader">CONTACT US TO KNOW MORE</p>
+        
+        <div class="contact-card">
+            <form class="contact-form" action="https://formsubmit.co/atul@taghash.io" method="POST">
+                
+                <input type="hidden" name="_cc" value="do@klavoza.com">
+                
+                <input type="hidden" name="_captcha" value="false">
+                
+                <input type="hidden" name="_subject" value="New Inquiry from TagHash Website">
+                
+                <input type="hidden" name="_template" value="table">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..." required></textarea>
+                </div>
+                <button type="submit" class="btn-contact-submit">CONTACT US TO KNOW MORE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>#taghash</h4>
+            <p>Professional fund services and compliance solutions.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025 #taghash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
