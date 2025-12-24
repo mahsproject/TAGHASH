@@ -41,7 +41,7 @@ function downloadPDF() {
     doc.setTextColor(0, 0, 0); // Black
     
     let y = 35; 
-    const lineHeight = 7;
+    const lineHeight = 6; 
     const pageHeight = doc.internal.pageSize.height;
     const margin = 20;
     
@@ -155,13 +155,53 @@ function downloadPDF() {
         "• Co-ordinating with the Trustee for all operations",
         "• Preparation of the associated documents",
         "",
-        "13. OTHER MATTERS",
-        "• Certification/attest function (CA certificates, 15CB, 64D etc)",
-        "• Responding to notices/ representation before statutory authorities",
-        "• SEBI approval for ODI investments",
-        "• Investor Accreditation",
-        "• Digital Disability Assessment",
-        "• Cybersecurity Compliance (with CSCRF)"
+        "13. CERTIFICATION & ATTESTATION SERVICES",
+        "• CA certificates and statutory attestations",
+        "• Form 15CB and remittance-related certifications",
+        "• Form 64D certification support",
+        "• Coordination with auditors and chartered accountants",
+        "• Verification of fund and investor data",
+        "• Timely completion aligned with regulatory deadlines",
+        "",
+        "14. REGULATORY NOTICES & AUTHORITY COORDINATION",
+        "• Review and classification of regulatory notices",
+        "• Data collation and document compilation",
+        "• Coordination with internal teams and advisors",
+        "• Information submission support",
+        "• Tracking timelines and regulatory follow-ups",
+        "• Liaison support with statutory authorities",
+        "",
+        "15. SEBI APPROVAL FOR ODI INVESTMENTS",
+        "• ODI eligibility and compliance assessment",
+        "• Preparation of approval-related documentation",
+        "• SEBI filing and submission coordination",
+        "• Support for disclosures and declarations",
+        "• Liaison with custodians and intermediaries",
+        "• Monitoring approval status and timelines",
+        "",
+        "16. INVESTOR ACCREDITATION SUPPORT",
+        "• Investor eligibility verification",
+        "• Documentation and evidence collection",
+        "• Coordination with accreditation agencies",
+        "• Process tracking and status updates",
+        "• Support for renewals and validity checks",
+        "• Seamless integration with onboarding workflow",
+        "",
+        "17. DIGITAL DISABILITY ASSESSMENT",
+        "• Accessibility compliance assessment",
+        "• Review against applicable disability standards",
+        "• Identification of gaps and improvement areas",
+        "• Digital platform usability evaluation",
+        "• Compliance documentation support",
+        "• Advisory for inclusive digital practices",
+        "",
+        "18. CYBERSECURITY COMPLIANCE (CSCRF)",
+        "• CSCRF compliance readiness assessment",
+        "• Identification of cybersecurity gaps",
+        "• Documentation and policy support",
+        "• Coordination with IT and security teams",
+        "• Compliance tracking and reporting support",
+        "• Alignment with regulatory cybersecurity requirements"
     ];
 
     // Loop to add text

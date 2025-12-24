@@ -40,10 +40,7 @@ body {
     letter-spacing: -1px;
 }
 
-/* =========================================
-   HERO SECTION (Simple & Casual)
-   ========================================= */
-
+/* Hero Section (Simple & Casual) */
 .hero {
     display: flex;
     align-items: center;
@@ -51,7 +48,6 @@ body {
     text-align: center;
     padding: 10rem 5%;
     min-height: 50vh;
-    /* Clean, soft background - easy on the eyes */
     background-color: #f8faff; 
     position: relative;
 }
@@ -60,7 +56,6 @@ body {
     max-width: 900px;
     position: relative;
     z-index: 2;
-    /* Gentle fade in */
     animation: simpleFadeIn 1s ease-out forwards;
     opacity: 0;
     transform: translateY(20px);
@@ -71,30 +66,17 @@ body {
 }
 
 .hero-content h1 {
-    /* TYPOGRAPHY: Clean & Modern */
     font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
-    font-weight: 800; /* Bold, but not too heavy */
-    color: #1a237e; /* Solid Dark Blue - High Contrast/Readable */
+    font-weight: 800;
+    color: #1a237e;
     line-height: 1.4;
-    
-    /* "Casual" means normal casing, not shouting in ALL CAPS */
     text-transform: none; 
     margin-bottom: 0;
 }
 
-/* The "Interesting" Part: A subtle highlight effect */
 .hero-content h1::first-letter {
-    font-size: 1.1em; /* Just a tiny bit larger */
-}
-
-/* Optional: Highlight the word 'Comprehensive' automatically */
-.hero-content h1 span.highlight {
-    background: linear-gradient(120deg, #e0e7ff 0%, #e0e7ff 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
-    background-position: 0 88%;
-    padding: 0 5px;
+    font-size: 1.1em;
 }
 
 /* Buttons */
@@ -136,9 +118,7 @@ body {
     color: #2962ff;
 }
 
-/* =========================================
-   NEW SPLIT LAYOUT FOR SERVICES
-   ========================================= */
+/* Services Section (Split Layout) */
 .services-section {
     padding: 5rem 5%;
     background: white;
@@ -162,7 +142,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Split Layout Container */
 .split-layout {
     display: flex;
     gap: 3rem;
@@ -172,9 +151,9 @@ body {
     min-height: 600px;
 }
 
-/* Left Side: Navigation (Desktop) */
+/* Navigation */
 .services-nav {
-    flex: 0 0 300px; /* Fixed width sidebar */
+    flex: 0 0 300px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -222,7 +201,7 @@ body {
     color: #2962ff;
 }
 
-/* Right Side: Content Area */
+/* Content Area */
 .services-content-area {
     flex: 1;
     position: relative;
@@ -234,12 +213,12 @@ body {
 }
 
 .content-panel {
-    display: none; /* Hidden by default */
+    display: none;
     animation: fadeIn 0.4s ease;
 }
 
 .content-panel.active {
-    display: block; /* Visible when active */
+    display: block;
 }
 
 @keyframes fadeIn {
@@ -292,9 +271,7 @@ body {
     top: -2px;
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-   ========================================= */
+/* Mobile Responsiveness */
 @media (max-width: 900px) {
     .hero {
         padding: 6rem 5%;
@@ -309,12 +286,11 @@ body {
         gap: 2rem;
     }
 
-    /* Updated to show ALL options at once in a grid */
     .services-nav {
         flex: none;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 Columns Grid */
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
         border-right: none;
         padding-right: 0;
@@ -328,17 +304,14 @@ body {
         background: #fff;
         border: 1px solid #eee;
         border-radius: 8px;
-        
-        /* Layout for icon and text */
         display: flex;
-        flex-direction: column; /* Stack Icon on top of text */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        
-        white-space: normal; /* Allow text to wrap to next line */
+        white-space: normal;
         font-size: 0.8rem;
-        height: 100%; /* Ensure equal height */
+        height: 100%;
     }
     
     .nav-item i {
