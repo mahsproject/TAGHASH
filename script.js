@@ -26,7 +26,7 @@ function scrollToContact() {
     }
 }
 
-// Function to generate and download a REAL PDF using jsPDF
+// Function to generate and download a PDF using jsPDF
 function downloadPDF() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();

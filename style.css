@@ -37,10 +37,9 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    /* No font settings needed as it's an SVG now */
 }
 
-/* Hero Section (Simple & Casual) */
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
